@@ -3,8 +3,8 @@
 ## Description
 This is  my workday planner. A useful app to plan your day. It allows you sto save  the  information during the day. 
 ## Images
-![alt text](https://github.com/FrankShock/Workdayplanner/blob/main/assests/images/PlanSC1.JPG)
-![alt text](https://github.com/FrankShock/Workdayplanner/blob/main/assests/images/PlanSC2.JPG)
+![alt text](https://github.com/FrankShock/Workdayplanner/blob/main/assets/images/PlanSC1.JPG
+![alt text](https://github.com/FrankShock/Workdayplanner/blob/main/assets/images/PlanSC2.JPG)
 
 
 ## Built With

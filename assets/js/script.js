@@ -1,10 +1,10 @@
-var scheduleArea = $(".schedule");
-var timeRow = [];
-var currentDate = moment().format("MMM Do YYYY");
-var currentHour = parseInt(moment().format("H"));
+var schArea = $(".schedule");
+var timeSec = [];
+var currDate = moment().format("MMM Do YYYY");
+var currHour = parseInt(moment().format("H"));
 var toDos = [];
 
-$("#currentDay").text(currentDate);
+$("#currentDay").text(currDate);
 
 setRows();
 
@@ -12,21 +12,21 @@ function setRows() {
 
     $("textarea").each(function () {
         var thisRow = $(this).attr("id");
-        timeRow.push(thisRow);
+        timeSec.push(thisRow);
     });
 
-    for (var i = 0; i < timeRow.length; i++) {
-        var timeNum = parseInt(timeRow[i])
+    for (var i = 0; i < timeSec.length; i++) {
+        var timeNum = parseInt(timeSec[i])
 
-        if ((timeNum) === currentHour) {
-            $("textarea[id=" + timeRow[i] + "]").addClass("present");
+        if ((timeNum) === currHour) {
+            $("textarea[id=" + timeSec[i] + "]").addClass("present");
 
         }
-         else if ((timeNum) > currentHour) {
-            $("textarea[id=" + timeRow[i] + "]").addClass("future");
+         else if ((timeNum) > currHour) {
+            $("textarea[id=" + timeSec[i] + "]").addClass("future");
         } 
         else {
-            $("textarea[id=" + timeRow[i] + "]").addClass("past");
+            $("textarea[id=" + timeSec[i] + "]").addClass("past");
         }
     }
 }
@@ -42,29 +42,29 @@ $(".saveBtn").on("click", function (event) {
 localStorage.setItem(hour, text);
 });
 
-var hourKey9 = localStorage.getItem("9");
-$("#9").text(hourKey9);
+var timenum9 = localStorage.getItem("9");
+$("#9").text(timenum9);
 
-var hourKey10 = localStorage.getItem("10");
-$("#10").text(hourKey10);
+var timenum10 = localStorage.getItem("10");
+$("#10").text(timenum10);
 
-var hourKey11 = localStorage.getItem("11");
-$("#11").text(hourKey11);
+var timenum11 = localStorage.getItem("11");
+$("#11").text(timenum11);
 
-var hourKey12 = localStorage.getItem("12");
-$("#12").text(hourKey12);
+var timenum12 = localStorage.getItem("12");
+$("#12").text(timenum12);
 
-var hourKey13 = localStorage.getItem("13");
-$("#13").text(hourKey13);
+var timenum13 = localStorage.getItem("13");
+$("#13").text(timenum13);
 
-var hourKey14 = localStorage.getItem("14");
-$("#14").text(hourKey14);
+var timenum14 = localStorage.getItem("14");
+$("#14").text(timenum14);
 
-var hourKey15 = localStorage.getItem("15");
-$("#15").text(hourKey15);
+var timenum15 = localStorage.getItem("15");
+$("#15").text(timenum15);
 
-var hourKey16 = localStorage.getItem("16");
-$("#16").text(hourKey16);
+var timenum16 = localStorage.getItem("16");
+$("#16").text(timenum16);
 
-var hourKey17 = localStorage.getItem("17");
-$("#17").text(hourKey17);
+var timenum17 = localStorage.getItem("17");
+$("#17").text(timenum17);
